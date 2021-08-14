@@ -1,0 +1,31 @@
+깃 저장소 주소 : .git이라고 끝나는 깃 저장 주소
+
+<원격 저장소를 복제해 실제 업무에서 사용하는 방법>
+1. 깃 저장소 복제 방법
+▶ ①git ②clone ③https://github.com/cyyoun/hello.git ④. 
+① hello git~
+② git을 복제할거야
+③ https://github.com/cyyoun/hello.git 주소를 (복제할거얌)
+④ 현재 디렉토리에
+
+2. 수정한 부분 보는 방법
+▶ git ①diff
+① different 로 차이점이라는 뜻
+2-1) 현재 상태 보는 방법 (수정한 부분)
+▶ git status
+
+3. 커밋 방법
+▶ git ①add git instruction.txt
+① 커밋 하기 전 추가
+▶ git ①commit -m ②"version1"
+① 실제 커밋할 때
+② 커밋 메세지를 'version1'로 남겨서 커밋
+
+4. 히스토리 보는 방법
+▶ git log
+
+5. 깃허브에 업로드 방법
+▶ git push 
+
+
+
