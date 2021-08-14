@@ -1,0 +1,50 @@
+1. https://git-scm.com/download/win 에서 git 다운로드
+2. 다운로드 받았으면 git Bash 열기
+
+<명령어 정리>
+→ pwd : 현재 디렉토리가 어디인지 알려줌
+Ex) /c/Users/cnsso/Documents
+
+→ mkdir 폴더명 : 폴더 생성
+Ex) mkdir gitfth
+
+→ cd 폴더명 : 폴더로 이동
+Ex) cd gitfth
+
+→ ls : 디렉토리 목록 보기
+Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내용을 자세히 출력
+
+→ git : 사용할 수 있는 명령어 보기
+
+→ git init : 빈 Git 저장소를 생성하거나 기존 저장소를 다시 초기화
+(.git 폴더가 생성됨) 
+
+→ vim f1.txt : vim 이라는 프로그램으로 f1.txt 파일을 생성하고 편집
+~
+~
+~
+
+<vim 안에서 편집 방법>
+→ i : insert의 의미로 입력 가능한 상태
+→ esc : 입력 불가능 상태
+→ :wq : 빠져나오기
+
+<빠져 나온 뒤 다시 git bash>
+→ cat f1.txt : f1파일의 내용을 보고 싶을 때 
+
+→ git status : 버전관리가 되고 있는 현재 상황 출력 (commit 되면 깨끗한 상태)
+
+→ git add f1.txt : f1.txt 파일을 git에게 관리하게 명령
+
+→ git config --global user.name 윤채영 또는 cyyoun(git 이름)
+: 다른 사람이 알 수 있도록 이름 설정, 한 번만 설정하면 됨
+
+→ git config --global user.email cyyoun41@gmail.com : 한 번만 설정
+
+→ git commit : 버전 생성, vim으로 들어가 커밋 메세지 설정 가능
+
+→ git log : commit message, user name, user email 정보 출력
+
+
+
+
