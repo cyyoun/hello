@@ -34,7 +34,7 @@ Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내
 
 → git status : 버전관리가 되고 있는 현재 상황 출력 (commit 되면 깨끗한 상태)
 
-→ git add f1.txt : f1.txt 파일을 git에게 관리하게 명령
+→ git add f1.txt : f1.txt 파일을 git에게 관리하게 명령 ▷ 커밋 대기 상태로 변경
 
 → git config --global user.name 윤채영 또는 cyyoun(git 이름)
 : 다른 사람이 알 수 있도록 이름 설정, 한 번만 설정하면 됨
@@ -44,6 +44,13 @@ Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내
 → git commit : 버전 생성, vim으로 들어가 커밋 메세지 설정 가능
 
 → git log : commit message, user name, user email 정보 출력
+→ git log -p : log를 보여주는데 버전 차이를 보여줌
+→ git diff 커밋주소1..커밋주소2 : 버전 소스 차이를 보여줌
+
+→ stage area : 커밋 대기 상태 출력
+
+
+
 
 
 
