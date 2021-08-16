@@ -1,7 +1,7 @@
 1. https://git-scm.com/download/win 에서 git 다운로드
 2. 다운로드 받았으면 git Bash 열기
 
-<명령어 정리>
+▶ 명령어 정리
 → pwd : 현재 디렉토리가 어디인지 알려줌
 Ex) /c/Users/cnsso/Documents
 
@@ -10,6 +10,8 @@ Ex) mkdir gitfth
 
 → cd 폴더명 : 폴더로 이동
 Ex) cd gitfth
+
+→ cd .. : 상위 폴더로 이동
 
 → ls : 디렉토리 목록 보기
 Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내용을 자세히 출력
@@ -24,12 +26,15 @@ Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내
 ~
 ~
 
-<vim 안에서 편집 방법>
+→ clear 또는 ctrl+L : 회면 전체 로그 삭제
+
+
+▶ vim 안에서 편집 방법
 → i : insert의 의미로 입력 가능한 상태
 → esc : 입력 불가능 상태
 → :wq : 빠져나오기
 
-<빠져 나온 뒤 다시 git bash>
+▶ 빠져 나온 뒤 다시 git bash
 → cat f1.txt : f1파일의 내용을 보고 싶을 때 
 
 → git status : 버전관리가 되고 있는 현재 상황 출력 (commit 되면 깨끗한 상태)
@@ -46,8 +51,26 @@ Cf) ls -al : .(점)을 포함한 경로 안의 모든 파일과 디렉토리 내
 → git log : commit message, user name, user email 정보 출력
 → git log -p : log를 보여주는데 버전 차이를 보여줌
 → git diff 커밋주소1..커밋주소2 : 버전 소스 차이를 보여줌
+(커밋주소1을 기준으로 커밋주소2의 데이터랑 비교해서 추가가 되었는지 삭제가 되었는지 차이를 출력해줌)
+Cf) @@ -1,2 +1 @@ : 2줄 삭제, 한 줄 추가됨
+@@ -1, +1,2 @@ : 1줄 삭제, 2줄 추가됨
 
 → stage area : 커밋 대기 상태 출력
+
+▶ 과거로 돌아가기
+→ git reset 돌아가기 위한 커밋 주소1 ①--hard : 커밋 주소1을 최신상태로 초기화 / 다시 복구 가능하나 깃의 원리를 이해해야 함
+※ 공유하기 전에 자신의 컴퓨터 안에서만 리셋을 해야 함.
+① soft, maxied 등 다른 옵션도 있음 / hard는 좀 위험함
+
+→ git revert : 해당 커밋으로 돌아가면서 새로운 버전 생성을 하는 것
+
+▶ 추가 공부
+→ git commit --help : commit 메세지에 대한 도움말을 볼 수 있음
+
+→ git commit -a : 수정, 추가, 삭제된 파일들을 모두 add 없이 커밋으로 버전을 생성
+
+→ git commit -am "커밋 메시지" : vim을 켜지 않고 커밋메시지를 바로 넣고 add, commit 을 할 수 있음
+
 
 
 
